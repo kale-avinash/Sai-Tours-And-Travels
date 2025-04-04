@@ -20,6 +20,7 @@
     body {
         padding-top: 80px; /* Prevent content from hiding behind navbar */
     }
+    
 }
 
 #spinner.show {
@@ -322,6 +323,8 @@
         transition: .5s;
         opacity: 0;
     }
+   
+    
 }
 
 .dropdown .dropdown-menu a:hover {
@@ -808,6 +811,10 @@
 
 
 /*** testimonial Start ***/
+.star-yellow {
+    color: #FFD700;
+}
+
 .testimonial .owl-carousel.testimonial-carousel {
     position: relative;
 }

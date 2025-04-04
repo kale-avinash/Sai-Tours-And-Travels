@@ -90,6 +90,33 @@
         <!-- Topbar End -->
 
         <!-- Navbar & Hero Start -->
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                const navbarCollapse = document.getElementById('navbarCollapse');
+        
+                navLinks.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        // Remove 'active' from all links
+                        navLinks.forEach(nav => nav.classList.remove('active'));
+        
+                        // Add 'active' to clicked link
+                        this.classList.add('active');
+        
+                        // Collapse navbar (for mobile)
+                        if (window.innerWidth < 992) {
+                            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                                toggle: false
+                            });
+                            bsCollapse.hide();
+                        }
+                    });
+                });
+            });
+        </script>
+        
+
         <div class="container-fluid nav-bar p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
@@ -786,11 +813,11 @@
                             <p class="fs-5 mb-0">Thanks Mr.Piyush for your prompt response and best services in travel during our long journey, we are really happy for your services best of luck !!!
                             </p>
                             <div class="d-flex justify-content-end">
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -810,11 +837,11 @@
                                 Driver was also polite.
                             </p>
                             <div class="d-flex justify-content-end">
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -830,14 +857,84 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-content p-4 mb-5">
+                            <p class="fs-5 mb-0">Used their one-way cab service from Pune to Kolhapur. Affordable and hassle-free experience. Driver arrived 10 minutes early, very professional.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                           <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-4" 
+                                style="width: 100px; height: 100px; font-size: 50px;">
+                             <i class="fas fa-user text-primary"></i>
+                            </div>
+                            <div class="my-auto">
+                                <h5>Agale Harshavardhan</h5>
+                                <p class="mb-0">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content p-4 mb-5">
+                            <p class="fs-5 mb-0">Clean cab, professional driver, and safe journey from Pune airport to Chhatrapati Sambhaji Nagar. I’m very happy with the service.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                           <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-4" 
+                                style="width: 100px; height: 100px; font-size: 50px;">
+                             <i class="fas fa-user text-primary"></i>
+                            </div>
+                            <div class="my-auto">
+                                <h5>Markad Prathamesh</h5>
+                                <p class="mb-0">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content p-4 mb-5">
+                            <p class="fs-5 mb-0">Very prompt service! I booked a cab from Shirdi to Mumbai for my parents and they reached safely on time. The driver was courteous and vehicle was clean. Highly recommend Sai Tours and Travels.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                            </div>
+                            
+                        </div>
+                        <div class="d-flex">
+                           <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-4" 
+                                style="width: 100px; height: 100px; font-size: 50px;">
+                             <i class="fas fa-user text-primary"></i>
+                            </div>
+                            <div class="my-auto">
+                                <h5>Priya Deshmukh</h5>
+                                <p class="mb-0">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content p-4 mb-5">
                             <p class="fs-5 mb-0">Good ride, safe & economical. Enjoyed the trip from Nagar to Pune.
                             </p>
                             <div class="d-flex justify-content-end">
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
+                                <i class="fas fa-star star-yellow"></i>
                             </div>
                         </div>
                         <div class="d-flex">
