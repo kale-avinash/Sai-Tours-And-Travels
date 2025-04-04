@@ -7,6 +7,9 @@
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
+body {
+    padding-top: 80px; /* Adjust based on your navbar height */
+}
 
 #spinner.show {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
